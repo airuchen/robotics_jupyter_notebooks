@@ -11,9 +11,13 @@ email: yu.wen.chen@rwth-aachen.de
 ``` bash
 cd ~/ && git clone https://github.com/airuchen/robotics_jupyter_notebooks.git && cd ~/robotics_jupyter_notebooks
 ```
-3. Set up python3 environment
+3. Set up python3 environment and Install dependencies.
 ``` bash
-source ~/robotics_jupyter_notebooks/robotics-env/bin/activate
+python3 -m venv robotics-env
+source robotics-env/bin/active
+pip3 install ipywidgets
+jupyter nbextension enable --py widgetsnbextension
+pip3 install ipython
 ```
 4. Run jupyter notebook
 ``` bash
